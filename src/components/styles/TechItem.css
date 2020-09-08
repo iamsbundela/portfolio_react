@@ -1,0 +1,28 @@
+.techitem {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 0.6rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.techitem:hover {
+    opacity: 1;
+    transform: scale(1.07);
+}
+
+.techitem__logo {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.techitem__title {
+    font-size: 1.6rem;
+}

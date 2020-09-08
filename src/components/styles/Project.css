@@ -1,0 +1,124 @@
+.project {
+    display: flex;
+    width: 80%;
+    padding: 10px 20px;
+    height: 350px;
+    margin: 35px auto;
+    border-radius: 0.6rem;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    transition: all 0.2s linear;
+}
+
+.project:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 6px 12px 35px rgba(255, 0, 0, 0.5);
+}
+
+.project__info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.project__head {
+    font-size: clamp(1.6rem, calc(5vw + 1rem), 2.5rem);
+    text-align: center;
+}
+
+.project__info img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.project__content {
+    margin: 0 25px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5px;
+    justify-content: space-between;
+}
+
+.project__desc {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.project__links {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.project__links a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #00f;
+}
+
+.project__links a:hover,
+.project__links a:hover {
+    color: blue;
+}
+
+@media (max-width: 900px) {
+    .project {
+        padding-top: 5px;
+    }
+
+    .project__links {
+        width: 100%;
+    }
+
+    .project__head {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .project__head {
+        font-size: 2rem;
+    }
+
+    .project__desc {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .project__head {
+        font-size: 2.3rem;
+    }
+
+    .project__info {
+        width: 90%;
+    }
+
+    .project__content {
+        width: 90%;
+        margin: 0;
+    }
+
+    .project__links {
+        margin-top: 10px;
+    }
+
+    .project__links a {
+        font-size: 20px;
+
+    }
+}
